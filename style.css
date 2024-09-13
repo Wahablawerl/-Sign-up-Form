@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("https://images.unsplash.com/photo-1678972726040-2f2cefc3cefa?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo-container {
+  background-color: darkgrey;
+  height: 200px;
+  width: 100%;
+  padding: 20px;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-container img {
+  height: 100%;
+  width: 20%;
+}
+.logo-container span {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 800px;
+  width: 100%;
+  background-color: white;
+}
+
+.container h1 {
+  font-size: 1.5rem;
+  margin: 20% 5% 8% 5%;
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+  padding: 5% 15% 5% 5%;
+  margin-bottom: 20px;
+}
+
+.form-container div {
+  margin: 10px;
+}
+
+input[type="text"],
+[type="number"],
+[type="email"],
+[type="password"] {
+  width: calc(75% - 20px);
+  width: 75%;
+  padding: 6px 8px;
+  border-radius: 5px;
+  border: 1px solid rgb(225, 239, 243);
+  cursor: pointer;
+}
+
+.container button {
+  width: 35%;
+  background-color: #596d48;
+  color: #e5e7eb;
+  padding: 12px 18px;
+  font-weight: 800;
+  border-radius: 5px;
+  border: none;
+  margin: 10px 75px 30px 45px;
+  cursor: pointer;
+}
+
+.container p {
+  margin-left: 45px;
+  font-weight: bold;
+}
+
+.container p span {
+  color: #596d48;
+}
